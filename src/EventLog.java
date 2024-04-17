@@ -2,18 +2,20 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class EventLog {
-    private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMMM-yyyy HH:mm:ss");
+
+    private static final String INPUT_NOT_VALID = "Description should not be empty";
+    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMMM-yyyy HH:mm:ss");
     private final String description;
     private final LocalDateTime timestamp;
 
     public EventLog() {
-        throw new IllegalArgumentException("Description should not be empty");
+        throw new IllegalArgumentException(INPUT_NOT_VALID);
 
     }
 
     public EventLog(String description) {
         if (description == null || description.isEmpty()) {
-            throw new IllegalArgumentException("Description should not be empty");
+            throw new IllegalArgumentException(INPUT_NOT_VALID);
         }
         this.description = description;
         this.timestamp = LocalDateTime.now();
@@ -25,7 +27,7 @@ public class EventLog {
     }
 
     public String viewInfo() {
-        String reportDateTime = this.timestamp.format(DateTimeFormatter.ofPattern("dd-MMMM-yyyy HH:mm:ss"));
+        String reportDateTime = timestamp.format(formatter);
 
         return String.format("[%s] %s", reportDateTime, getDescription());
     }

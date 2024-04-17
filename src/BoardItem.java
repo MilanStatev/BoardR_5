@@ -88,12 +88,12 @@ public class BoardItem {
         eventLogs.add(new EventLog(eventTitle));
     }
 
-    public String viewInfo() {
-        return String.format("'%s', [%s | %s]", getTitle(), getStatus().toString(), getDueDate());
-    }
-
     public void displayHistory() {
         eventLogs.forEach(event -> System.out.println(event.viewInfo()));
+    }
+
+    public String viewInfo() {
+        return String.format("'%s', [%s | %s]", getTitle(), getStatus().toString(), getDueDate());
     }
 
 }
