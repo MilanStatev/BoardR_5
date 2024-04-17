@@ -1,17 +1,19 @@
 public enum Status {
-    OPEN, TODO, IN_PROGRESS, DONE, VERIFIED;
+    OPEN( "Open"),
+    TODO("ToDo"),
+    IN_PROGRESS("In Progress"),
+    DONE("Done"),
+    VERIFIED("Verified");
+
+    public final String value;
+
+    Status(String value) {
+        this.value = value;
+    }
+
 
     @Override
     public String toString() {
-        String result = null;
-        switch (this) {
-            case OPEN -> result = "Open";
-            case TODO -> result = "ToDo";
-            case IN_PROGRESS -> result = "In Progress";
-            case DONE -> result = "Done";
-            case VERIFIED -> result = "Verified";
-        }
-
-        return result;
+        return this.value;
     }
 }
