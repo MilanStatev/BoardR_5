@@ -9,7 +9,7 @@ public class Board {
     }
 
     public List<BoardItem> getItems() {
-        return items;
+        return new ArrayList<>(items);
     }
 
     public void addItem(BoardItem boardItem) {
