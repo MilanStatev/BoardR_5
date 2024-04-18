@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Board {
-    private List<BoardItem> items;
+    private final List<BoardItem> items;
 
     public Board() {
         this.items = new ArrayList<>();
