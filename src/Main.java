@@ -16,7 +16,7 @@ public class Main {
 
         board.addItem(item2); // add item2
 
-//        board.addItem(item1); // Exception thrown: Item already in the list
+       board.addItem(item1); // Exception thrown: Item already in the list
 
 
 
