@@ -10,8 +10,6 @@ public class Main {
         board.addItem(item1); // add item1
         board.addItem(item2); // add item2
 
-        System.out.println("Merge this");
-
         System.out.println(board.totalItems()); // count: 2
     }
 }
