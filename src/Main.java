@@ -10,7 +10,7 @@ public class Main {
         board.addItem(item1); // add item1
         board.addItem(item2); // add item2
 
-        System.out.println("One more revert");
+        System.out.println("Test once more");
 
         System.out.println(board.totalItems()); // count: 2
     }
