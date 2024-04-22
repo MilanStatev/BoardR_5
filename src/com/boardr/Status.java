@@ -1,11 +1,13 @@
+package com.boardr;
+
 public enum Status {
     OPEN( "Open"),
-    TODO("ToDo"),
+    TODO("To Do"),
     IN_PROGRESS("In Progress"),
     DONE("Done"),
     VERIFIED("Verified");
 
-    public final String value;
+    private final String value;
 
     Status(String value) {
         this.value = value;

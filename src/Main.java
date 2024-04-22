@@ -1,17 +1,22 @@
+import com.boardr.Task;
+
 import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        BoardItem item1 = new BoardItem("Implement login/logout", LocalDate.now().plusDays(3));
-        BoardItem item2 = new BoardItem("Secure admin endpoints", LocalDate.now().plusDays(5));
+        Task task = new Task("Test the application flow", "Pesho", LocalDate.now().plusDays(1));
 
-        Board board = new Board();
+        Task task1 = new Task("Test the application flow", "Pesho", LocalDate.now().plusDays(1));
 
-        board.addItem(item1); // add item1
-        board.addItem(item2); // add item2
+        task1.setAssignee("Tosho");
 
-        System.out.println("Merge Conflict after reset commit");
+        task.advanceStatus();
 
-        System.out.println(board.totalItems()); // count: 2
+        task.advanceStatus();
+
+        task.setAssignee("Gosho");
+
+        task.displayHistory();
+        task1.displayHistory();
     }
 }
