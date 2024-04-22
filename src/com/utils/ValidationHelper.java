@@ -32,4 +32,8 @@ public class ValidationHelper {
             throw new IllegalArgumentException(errorMessage);
         }
     }
+
+    public static boolean validateInputIsNotEmpty(String input){
+       return input == null || input.isEmpty();
+    }
 }

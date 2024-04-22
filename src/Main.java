@@ -1,22 +1,27 @@
+import com.boardr.Board;
+import com.boardr.Issue;
 import com.boardr.Task;
 
 import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        Task task = new Task("Test the application flow", "Pesho", LocalDate.now().plusDays(1));
+        LocalDate tomorrow = LocalDate.now().plusDays(1);
 
-        Task task1 = new Task("Test the application flow", "Pesho", LocalDate.now().plusDays(1));
+        Issue issue = new Issue("App flow tests?", "We need to test the App!", tomorrow);
 
-        task1.setAssignee("Tosho");
+        Task task = new Task("Test the application flow", "Pesho", tomorrow);
 
-        task.advanceStatus();
 
-        task.revertStatus();
 
-        task.setAssignee("Gosho");
+        Board board = new Board();
 
-        task.displayHistory();
-        task1.displayHistory();
+
+
+        board.addItem(issue);
+
+        board.addItem(task);
+
+        System.out.println(board.totalItems());
     }
 }

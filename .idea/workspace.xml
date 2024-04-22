@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a34c3a31-4c34-4eda-812d-f0b80d7d80b1" name="Changes" comment="learn to merge">
-      <change afterPath="$PROJECT_DIR$/src/com/utils/ValidationHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/boardr/BoardItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/boardr/BoardItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/boardr/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/boardr/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/boardr/Issue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/boardr/Issue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/utils/ValidationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/utils/ValidationHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
