@@ -12,7 +12,7 @@ public class Main {
 
         task.advanceStatus();
 
-        task.advanceStatus();
+        task.revertStatus();
 
         task.setAssignee("Gosho");
 
