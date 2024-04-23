@@ -1,11 +1,11 @@
 package com.models;
 
-import com.loggers.Logger;
+import com.models.contracts.Printable;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Board {
+public class Board implements Printable {
     private final List<BoardItem> items;
 
     public Board() {
@@ -28,7 +28,8 @@ public class Board {
         return items.size();
     }
 
-    public void displayHistory(Logger logger) {
-        items.forEach(item -> logger.log(item.getHistory()));
+    @Override
+    public void displayHistory() {
+        items.forEach(BoardItem::displayHistory);
     }
 }

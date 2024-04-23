@@ -1,4 +1,3 @@
-import com.loggers.ConsoleLogger;
 import com.models.Board;
 import com.models.BoardItem;
 import com.models.Issue;
@@ -10,16 +9,26 @@ public class Main {
     public static void main(String[] args) {
         LocalDate tomorrow = LocalDate.now().plusDays(1);
 
+        Task task = new Task("App flow tests?", "Pesho", tomorrow);
 
-
-        BoardItem task = new Task("Write unit tests", "Pesho", tomorrow);
-
-        BoardItem issue = new Issue("Review tests", "Someone must review Pesho's tests.", tomorrow);
+        Issue issue = new Issue("Review tests", "Someone must review Pesho's tests.", tomorrow);
 
 
 
-        System.out.println(task.viewInfo());
+        Board board = new Board();
 
-        System.out.println(issue.viewInfo());
+
+
+        board.addItem(task);
+
+        board.addItem(issue);
+
+        task.advanceStatus();
+
+        issue.advanceStatus();
+
+
+
+        board.displayHistory();
     }
 }
