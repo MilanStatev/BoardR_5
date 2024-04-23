@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a34c3a31-4c34-4eda-812d-f0b80d7d80b1" name="Changes" comment="learn to merge" />
+    <list default="true" id="a34c3a31-4c34-4eda-812d-f0b80d7d80b1" name="Changes" comment="learn to merge">
+      <change afterPath="$PROJECT_DIR$/src/com/loggers/ConsoleLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/loggers/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/boardr/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/models/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/boardr/BoardItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/models/BoardItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/boardr/EventLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/models/EventLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/boardr/Issue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/models/Issue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/boardr/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/models/enums/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/boardr/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/models/Task.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -26,15 +38,20 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.models" />
       <recent name="" />
     </key>
   </component>

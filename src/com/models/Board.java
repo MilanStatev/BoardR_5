@@ -1,4 +1,6 @@
-package com.boardr;
+package com.models;
+
+import com.loggers.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,5 +26,9 @@ public class Board {
 
     public int totalItems(){
         return items.size();
+    }
+
+    public void displayHistory(Logger logger) {
+        items.forEach(item -> logger.log(item.getHistory()));
     }
 }

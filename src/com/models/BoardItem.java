@@ -1,5 +1,6 @@
-package com.boardr;
+package com.models;
 
+import com.models.enums.Status;
 import com.utils.ValidationHelper;
 
 import java.time.LocalDate;
@@ -109,8 +110,11 @@ public class BoardItem {
         }
     }
 
-    public void displayHistory() {
-        eventLogs.forEach(event -> System.out.println(event.viewInfo()));
+    public String getHistory() {
+        StringBuilder sb = new StringBuilder();
+        eventLogs.forEach(event -> sb.append(event.viewInfo()).append(System.lineSeparator()));
+
+        return sb.toString().trim();
     }
 
     public String viewInfo() {

@@ -1,4 +1,4 @@
-package com.boardr;
+package com.models;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

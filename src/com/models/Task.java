@@ -1,5 +1,6 @@
-package com.boardr;
+package com.models;
 
+import com.models.enums.Status;
 import com.utils.ValidationHelper;
 
 import java.time.LocalDate;
@@ -25,5 +26,10 @@ public class Task extends BoardItem {
 
     public String getAssignee() {
         return assignee;
+    }
+
+    @Override
+    public String viewInfo() {
+        return  String.format("Task: %s, Assignee: %s", super.viewInfo(), this.getAssignee());
     }
 }

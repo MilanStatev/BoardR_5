@@ -1,4 +1,4 @@
-package com.boardr;
+package com.models.enums;
 
 public enum Status {
     OPEN( "Open"),

@@ -1,4 +1,4 @@
-package com.boardr;
+package com.models;
 
 import com.utils.ValidationHelper;
 
@@ -17,5 +17,10 @@ public class Issue extends BoardItem {
     @Override
     public void setDueDate(LocalDate dueDate) {
         super.setDueDate(dueDate);
+    }
+
+    @Override
+    public String viewInfo() {
+        return  String.format("Task: %s, Description: %s", super.viewInfo(), this.description);
     }
 }
